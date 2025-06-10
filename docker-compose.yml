@@ -23,3 +23,6 @@ services:
       - comfy_data:/root/ComfyUI/data
     ports:
       - "8188:8188"
+volumes:
+  sdmodels:
+  comfy_data:
