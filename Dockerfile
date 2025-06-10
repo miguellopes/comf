@@ -4,8 +4,7 @@ FROM yanwk/comfyui-boot:cu124-slim
 # ensure git is available
 USER root
 RUN apt-get update \
-  && apt-get install -y --no-install-recommends git \
-  && rm -rf /var/lib/apt/lists/*
+  && apt-get install -y --no-install-recommends git
 
 # install Manager's Python dependencies
 RUN pip install --no-cache-dir -r /root/ComfyUI/custom_nodes/ComfyUI-Manager/requirements.txt
